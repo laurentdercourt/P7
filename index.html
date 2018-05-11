@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>un restaurant, un avis</title>
+    <link rel="stylesheet" type="text/css" href="CSS/siteAvis.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- intro -->
+    <div class="container">
+        <h1 class="z-depth-5">Un restaurant, un avis</h1>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="img/perplexe.jpg">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Choisir le bon restaurant ? C'est forcément votre souhait ? pas simple à réaliser à réaliser sans l'aide de la communauté, découvrez le site Internet qui vous rendra un vrai service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="img/resto.jpg">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Grâce à vous, découvrez les avis sur les différents restaurants de la capitale, c'est simple, fiable et rapide !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="img/sourire.jpg">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>N'oubliez pas à votre tour de donner votre avis grâce à l'appli "my_resto is good". A télécharger sur les différents store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin intro-->
+
+
+
+    <!-- Modal 1  resto -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h6>Saisir le nom du restaurant :</h6>
+            <form>
+                <div>
+                    <label for="nom_restau"></label>
+                    <input type="text" name="nom_restau" id="nom_restau" />
+                    <input name="validez" type="button" value="Validez" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- fin modal 1 -->
+
+    <!-- Modal 2  avis + note -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h5>Donnez votre avis :</h5>
+            <input type="text" name="newAvis" id="newAvis" />
+            <div class="input-field s12">
+                <select id="taNote">
+                  <option value="" disabled selected>Donnez une note :</option>
+                  <option name="newNote" value="1">*</option>
+                  <option name="newNote" value="2">**</option>
+                  <option name="newNote" value="3">***</option>
+                    <option name="newNote" value="4">****</option>
+                <option name="newNote" value="5">*****</option>
+                </select>
+            </div>
+            <a id="btn_valide" class="waves-effect waves-light btn">Validez</a>
+        </div>
+    </div>
+
+    <!-- fin modal 2 -->
+
+
+
+    <div class="row">
+
+        <div class="col s12 m12 l4">
+            <h6>Sélectionnez votre restaurant selon son nombre d'étoiles : </h6>
+            <div class="row">
+                <div class="col s6 m6 l6">
+                    <form>
+                        <p>minimum<br>
+                            <input name="mini" type="radio" id="etoile1" value="1" />
+                            <label for="etoile1">*</label>
+                        </p>
+                        <p>
+                            <input name="mini" type="radio" id="etoile2" value="2" />
+                            <label for="etoile2">* *</label>
+                        </p>
+                        <p>
+                            <input name="mini" type="radio" id="etoile3" value="3" />
+                            <label for="etoile3">* * *</label>
+                        </p>
+                        <p>
+                            <input name="mini" type="radio" id="etoile4" value="4" />
+                            <label for="etoile4">* * * *</label>
+                        </p>
+                        <p>
+                            <input name="mini" type="radio" id="etoile5" value="5" />
+                            <label for="etoile5">* * * * *</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="col s6 m6 l6">
+                    <form>
+                        <p>maximum<br>
+                            <input name="maxi" type="radio" id="etoile21" value="1" />
+                            <label for="etoile21">*</label>
+                        </p>
+                        <p>
+                            <input name="maxi" type="radio" id="etoile22" value="2" />
+                            <label for="etoile22">* *</label>
+                        </p>
+                        <p>
+                            <input name="maxi" type="radio" id="etoile23" value="3" />
+                            <label for="etoile23">* * *</label>
+                        </p>
+                        <p>
+                            <input name="maxi" type="radio" id="etoile24" value="4" />
+                            <label for="etoile24">* * * *</label>
+                        </p>
+                        <p>
+                            <input name="maxi" type="radio" id="etoile25" value="5" />
+                            <label for="etoile25">* * * * *</label>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <!-- collapsible resto -->
+                <ul class="collapsible" data-collapsible="accordion">
+                </ul>
+            <!-- fin collapsible resto -->
+        </div>
+        <!-- appel de la carte -->
+        <div class="col s12 m12 l8">
+            <div id="map"></div>
+        </div>
+        <!-- fin -->
+    </div>
+
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- API GOOGLE MAPS / KEY -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAugD73NWYygDmOOHPlWR10qAzyS71tRFw&callback=initMap&libraries=places"></script>
+
+    <!-- MON JAVASCRIPT  -->
+    <script type="text/javascript" src="JS/map.js"></script>
+    <script type="text/javascript" src="JS/restaurant.js"></script>
+    <script type="text/javascript" src="JS/settings.js"></script>
+    
+    <!-- MES JAVASCRIPT CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+
+</body>
+
+
+
+
+</html>
